@@ -364,14 +364,23 @@ img {
     transform: translateY(-2px);
 }
 
+/* Ensure CTA buttons are identical in size */
+.btn-cta {
+    min-width: 180px;
+    justify-content: center;
+    text-align: center;
+}
+
 /* Hero Stats */
 .hero-stats {
     display: flex;
     gap: 40px;
+    align-items: flex-start;
 }
 
 .stat-item {
     text-align: center;
+    min-width: 100px;
 }
 
 .stat-number {
