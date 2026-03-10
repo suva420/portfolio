@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvarup Ghosh | Data Scientist & ML Engineer</title>
+    <meta name="description" content="Portfolio of Suvarup Ghosh — Data Scientist & Machine Learning Engineer specializing in geoscience AI, seismic analysis, and computer vision.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>SG<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">
+                    <span class="typing-cursor">_</span> Hello, I'm
+                </p>
+                <h1 class="hero-name glitch" data-text="Suvarup Ghosh">Suvarup Ghosh</h1>
+                <div class="hero-titles">
+                    <span class="hero-title-static">I build </span>
+                    <span class="hero-title-dynamic" id="dynamicTitle"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Data Scientist &amp; Machine Learning Engineer with 3+ years of experience delivering AI solutions in <strong>geoscience</strong>, <strong>seismic analysis</strong>, and <strong>computer vision</strong>.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-terminal"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Publications</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="85">0</span><span class="stat-suffix">%+</span>
+                        <span class="stat-label">Model Accuracy</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring ring-2"></div>
+                    <img src="avatar.png" alt="Suvarup Ghosh" class="avatar-image">
+                    <div class="orbit-dot dot-1"><i class="fas fa-brain"></i></div>
+                    <div class="orbit-dot dot-2"><i class="fas fa-chart-line"></i></div>
+                    <div class="orbit-dot dot-3"><i class="fas fa-database"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decorator">//</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a results-oriented <span class="highlight">Data Scientist</span> and <span class="highlight">Machine Learning Engineer</span> based in Ilmenau, Germany. I specialize in designing robust ML models, extracting actionable insights, and collaborating with cross-functional teams to deliver real-world AI solutions.
+                    </p>
+                    <p>
+                        With a strong academic foundation — an <strong>M.Sc. in Research in Computer & Systems Engineering</strong> from TU Ilmenau and a <strong>B.Tech in Computer Science</strong> from UEM Kolkata — I bridge the gap between cutting-edge research and practical engineering.
+                    </p>
+                    <p>
+                        My work spans <strong>hyperspectral imaging</strong>, <strong>seismic signal processing</strong>, <strong>OCR systems</strong>, and <strong>geochemical domain analysis</strong>. I thrive on turning complex data into clear, impactful models.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag"><i class="fas fa-mountain"></i> Geoscience AI</span>
+                        <span class="tag"><i class="fas fa-wave-square"></i> Signal Processing</span>
+                        <span class="tag"><i class="fas fa-eye"></i> Computer Vision</span>
+                        <span class="tag"><i class="fas fa-microscope"></i> Spectral Analysis</span>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dot dot-red"></div>
+                            <div class="terminal-dot dot-yellow"></div>
+                            <div class="terminal-dot dot-green"></div>
+                            <span class="terminal-title">suvarup@portfolio:~$</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="cmd-prompt">$</span> cat profile.json</p>
+                            <pre><code>{
+  "name": "Suvarup Ghosh",
+  "location": "Ilmenau, Germany",
+  "role": "Data Scientist & ML Engineer",
+  "education": {
+    "masters": "TU Ilmenau",
+    "bachelors": "UEM Kolkata"
+  },
+  "interests": [
+    "Machine Learning",
+    "Deep Learning",
+    "Geoscience AI",
+    "Computer Vision"
+  ],
+  "languages": ["English (C1)", "German (A1/A2)"]
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decorator">//</span> Tech Stack
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-category="ml">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3>ML / Data Science</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="92"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Keras</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas / NumPy</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="95"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="prog">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Kubernetes</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="viz">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3>Visualization & Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Matplotlib / Seaborn</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tableau</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Streamlit</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MS Office</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Unity</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decorator">//</span> Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Master's Thesis Student – Data Science & ML</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-building"></i> DMT GmbH & Co. KG, TÜV NORD GROUP
+                            </span>
+                            <span class="timeline-meta">
+                                <i class="fas fa-calendar"></i> Sep 2024 – Sep 2025
+                                <i class="fas fa-map-marker-alt"></i> Essen, Germany
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed a hyperspectral imaging (HSI) model integrating spectral and textural features, increasing lithology classification accuracy by <strong>20%</strong>.</li>
+                            <li>Engineered a supervised model combining HSI and XRF data, achieving <strong>&gt;85%</strong> validation accuracy on unseen drill cores.</li>
+                            <li>Applied unsupervised ML for geological domain segmentation, accelerating key element identification.</li>
+                            <li>Delivered results for both field operations and publications.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Hyperspectral Imaging</span>
+                            <span>XRF Analysis</span>
+                            <span>Unsupervised ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Student Assistant, Machine Learning in Seismology</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-building"></i> DMT GmbH & Co. KG, TÜV NORD GROUP
+                            </span>
+                            <span class="timeline-meta">
+                                <i class="fas fa-calendar"></i> Aug 2023 – Aug 2024
+                                <i class="fas fa-map-marker-alt"></i> Essen, Germany
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Designed and deployed ML algorithms to denoise seismic data, improving signal-to-noise ratio by <strong>30%</strong>.</li>
+                            <li>Built and validated multi-class classification models, raising F1-score by <strong>15%</strong>.</li>
+                            <li>Led EDA, feature engineering, and validation using Python and TensorFlow.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Seismic Analysis</span>
+                            <span>TensorFlow</span>
+                            <span>Classification</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intern, Data Science & Experimental Text Recognition</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-building"></i> AI-UI GmbH
+                            </span>
+                            <span class="timeline-meta">
+                                <i class="fas fa-calendar"></i> Dec 2022 – Apr 2023
+                                <i class="fas fa-map-marker-alt"></i> Ilmenau, Germany
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Created synthetic German text datasets, expanding OCR training data by <strong>500,000+</strong> samples.</li>
+                            <li>Co-developed OCR models achieving <strong>92%+</strong> accuracy for handwritten and printed text.</li>
+                            <li>Improved models through iterative evaluation and feedback.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>OCR</span>
+                            <span>Deep Learning</span>
+                            <span>Synthetic Data</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineer (Werkstudent), Full-Stack Dev</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-building"></i> Akademie der Wissenschaften zu Göttingen
+                            </span>
+                            <span class="timeline-meta">
+                                <i class="fas fa-calendar"></i> Feb 2022 – Jul 2022
+                                <i class="fas fa-map-marker-alt"></i> Göttingen, Germany
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Built client-server solutions with React.js and Leaflet for the KuVis project.</li>
+                            <li>Integrated MySQL and Docker, reducing deployment time by <strong>40%</strong>.</li>
+                            <li>Enhanced reliability and scalability via robust integration.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>React.js</span>
+                            <span>Docker</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Student Assistant, Systems & Networking</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-building"></i> Technische Universität Ilmenau
+                            </span>
+                            <span class="timeline-meta">
+                                <i class="fas fa-calendar"></i> Sep 2021 – Dec 2021
+                                <i class="fas fa-map-marker-alt"></i> Ilmenau, Germany
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Administered Linux/CentOS servers, improving uptime by <strong>15%</strong>.</li>
+                            <li>Enhanced communication interfaces for research networks.</li>
+                            <li>Coordinated team communication and managed projects.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Linux</span>
+                            <span>Networking</span>
+                            <span>Server Admin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decorator">//</span> Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Hyperspectral & XRF Lithology Classification</h3>
+                    <p class="project-period">2024 – 2025</p>
+                    <p class="project-desc">
+                        Built an end-to-end ML pipeline integrating Hyperspectral Imaging and X-ray Fluorescence data for supervised lithological classification and unsupervised geochemical domain identification in drill cores. Improved prediction accuracy and operational efficiency for geological surveys.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>HSI</span>
+                        <span>XRF</span>
+                        <span>Supervised ML</span>
+                        <span>Unsupervised ML</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">85%+</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">20%</span>
+                            <span class="metric-label">Accuracy Boost</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>Seismic Event Denoising & Classification</h3>
+                    <p class="project-period">2023 – 2024</p>
+                    <p class="project-desc">
+                        Developed advanced ML models for denoising and classifying seismic data, supporting improved geoscience monitoring. Achieved significant improvements in signal-to-noise ratio and multi-class classification performance.
+                    </p>
+                    <div class="project-tags">
+                        <span>TensorFlow</span>
+                        <span>Signal Processing</span>
+                        <span>Classification</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">30%</span>
+                            <span class="metric-label">SNR Improvement</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">15%</span>
+                            <span class="metric-label">F1 Boost</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-font"></i>
+                    </div>
+                    <h3>German OCR Model Development</h3>
+                    <p class="project-period">2022</p>
+                    <p class="project-desc">
+                        Built and optimized OCR models using synthetic data and deep learning, achieving industry-standard recognition accuracy for both handwritten and printed German text.
+                    </p>
+                    <div class="project-tags">
+                        <span>Deep Learning</span>
+                        <span>OCR</span>
+                        <span>Synthetic Data</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">92%+</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">500K+</span>
+                            <span class="metric-label">Training Samples</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decorator">//</span> Publications
+            </h2>
+            <div class="publications-list">
+                <div class="publication-card">
+                    <div class="pub-year">2020</div>
+                    <div class="pub-content">
+                        <h3>Predictive Analysis & Classification of Diseases in Organs Using Modified-C Clustering Technique</h3>
+                        <p class="pub-venue"><i class="fas fa-book"></i> INDIACOM 2020 — IEEE</p>
+                    </div>
+                    <div class="pub-link">
+                        <a href="https://ieeexplore.ieee.org/document/9083717" target="_blank" class="btn-icon" title="IEEE Link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <div class="pub-year">2020</div>
+                    <div class="pub-content">
+                        <h3>Statistical Analysis & Categorization for Tweets During Natural Disaster Using Classification and Ranking Approach</h3>
+                        <p class="pub-venue"><i class="fas fa-book"></i> INCET 2020 — IEEE</p>
+                    </div>
+                    <div class="pub-link">
+                        <a href="https://ieeexplore.ieee.org/document/9154122" target="_blank" class="btn-icon" title="IEEE Link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <div class="pub-year">2020</div>
+                    <div class="pub-content">
+                        <h3>Pixel Wise Image Fusion by Using Quantization Table for Data Security</h3>
+                        <p class="pub-venue"><i class="fas fa-book"></i> INDIACOM 2020 — IEEE</p>
+                    </div>
+                    <div class="pub-link">
+                        <a href="https://ieeexplore.ieee.org/document/9083694" target="_blank" class="btn-icon" title="IEEE Link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decorator">//</span> Education
+            </h2>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>M.Sc., Research in Computer & Systems Engineering</h3>
+                    <p class="edu-school">Technische Universität Ilmenau</p>
+                    <p class="edu-meta"><i class="fas fa-map-marker-alt"></i> Ilmenau, Germany</p>
+                    <p class="edu-meta"><i class="fas fa-calendar"></i> Oct 2020 – Sep 2025</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>B.Tech., Computer Science & Engineering</h3>
+                    <p class="edu-school">UEM Kolkata</p>
+                    <p class="edu-meta"><i class="fas fa-map-marker-alt"></i> Kolkata, India</p>
+                    <p class="edu-meta"><i class="fas fa-calendar"></i> Jul 2016 – May 2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decorator">//</span> Get In Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always open to discussing new projects, research collaborations, or opportunities in the fields of Machine Learning and Data Science. Let's build something impactful together.
+                </p>
+                <div class="contact-grid">
+                    <a href="mailto:suvarupghosh7916@gmail.com" class="contact-card" id="contact-email">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p>suvarupghosh7916@gmail.com</p>
+                    </a>
+                    <a href="tel:+491764705183" class="contact-card" id="contact-phone">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Phone</h3>
+                        <p>+49 176 4705 1831</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/suvarupghosh-56784a184" target="_blank" class="contact-card" id="contact-linkedin">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <h3>LinkedIn</h3>
+                        <p>suvarupghosh</p>
+                    </a>
+                    <a href="#" class="contact-card" id="contact-location">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Location</h3>
+                        <p>Ilmenau, Germany</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>SG<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p>Designed & Built by Suvarup Ghosh &copy; 2025</p>
+                <div class="footer-social">
+                    <a href="mailto:suvarupghosh7916@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/suvarupghosh-56784a184" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

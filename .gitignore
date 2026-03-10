@@ -1,0 +1,10 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+*.log
+
+# PDF CV (not needed for the website)
+*.pdf
+
+# Original photo source
+photo.jpg
